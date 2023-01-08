@@ -1,13 +1,12 @@
-﻿
-int a = -11;
-int b = 20;
-int c = 18;
- 
-int max = a;
+﻿int[] array = {3, 4, -9, 1};
+int N = array.Length;
+int index = 0;
+int max = 0;
 
-if (a>max) max = a;
-if (b>max) max = b;
-if (c>max) max = c;
-
+while (index < N)
+    if (array[index] > max)
+        max = array[index];
+    else
+        index++;
 
 Console.WriteLine(max);
