@@ -1,15 +1,13 @@
-﻿int index = 2;
+﻿int[] array = {1, 4, 7, 8, 9, };
+int N = array.Length;
+int index = 0;
 
-if (a>b) 
-{Console.Write("max=");
-Console.WriteLine(a);
-Console.Write("min=");
-Console.WriteLine(b);}
-    else
+while (index < N)
 {
+    if (array[index] % 2 == 0)
+    {
+        Console.WriteLine(array[index]);
+    }
     
-Console.Write("max=");
-Console.WriteLine(b);
-Console.Write("min=");
-Console.WriteLine(a);
+    index++;
 }
