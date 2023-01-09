@@ -1,5 +1,5 @@
 ﻿
-Console.WriteLine("Введите трёхзначное число");
+Console.WriteLine("Ввести трёхзначное число");
 
 int N = Convert.ToInt32(Console.ReadLine());
 
