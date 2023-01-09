@@ -7,9 +7,9 @@ string anyNumberText = Convert.ToString(anyNumber);
 
 if (anyNumberText.Length > 2)
 {
-    Console.WriteLine("Третья цифра -> " + anyNumberText[2]);
+    Console.WriteLine(anyNumberText[2]);
 }
 else
 {
-    Console.WriteLine("-> Третьей цифры нет");
+    Console.WriteLine("Третьей цифры нет");
 }
