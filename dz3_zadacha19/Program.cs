@@ -14,4 +14,4 @@ if (number.Length == 5)
 {
     CheckingNumber(number);
 }
-else Console.WriteLine("Число не пятизначное. Введите пятизначное число ");
+else Console.WriteLine("Число не пятизначное");
