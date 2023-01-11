@@ -1,4 +1,4 @@
-﻿int[] array = {3, 4, -9, 1};
+﻿int[] array = {3, 4, -9, 5};
 int N = array.Length;
 int index = 0;
 int max = 0;
