@@ -1,6 +1,9 @@
-﻿Console.Write("Введите число ");
+﻿// Создание
+
+Console.Write("Введите число ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+// Суммирование чисел
 int SumNumber(int number)
 {
     int counter = Convert.ToString(number).Length;
@@ -13,5 +16,7 @@ int SumNumber(int number)
     }
     return result;
 }
+
+// Вывод суммы
 int sumNumber = SumNumber(number);
 Console.WriteLine(sumNumber);
