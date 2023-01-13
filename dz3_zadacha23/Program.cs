@@ -12,7 +12,7 @@
 void Print(int[] array)
 {
     int count = array.Length;
-    int index = 0;
+    int index = 1;
     while (index < count)
     {
         Console.Write(array[index] + " ");
