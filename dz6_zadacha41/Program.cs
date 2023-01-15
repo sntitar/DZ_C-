@@ -23,5 +23,4 @@ int CheckingNumber(int[] arrayNumbers)
 }
 
 InputNumbers(number);
-
 Console.WriteLine($"Введено чисел больше нуля {CheckingNumber(arrayNumbers)} ");
