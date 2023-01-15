@@ -1,6 +1,6 @@
 ﻿int[] CreateArray()
 {
-    int number = Random.Shared.Next(2, 10);
+    int number = Random.Shared.Next(2, 20);
     int[] array = new int[number];
     return array;
 
@@ -9,7 +9,7 @@ void FillArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = Random.Shared.Next(2, 10);
+        array[i] = Random.Shared.Next(2, 20);
     }
 }
 string PrintArray(int[] printArray)
