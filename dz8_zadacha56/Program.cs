@@ -1,55 +1,53 @@
 ﻿int m = InputNumbers("Введите m ");
 int n = InputNumbers("Введите n ");
-int[,] array = new int[m, n];
-
-CreateArray(array);
-WriteArray(array);
 int InputNumbers(string input)
 {
     Console.Write(input);
     int output = Convert.ToInt32(Console.ReadLine());
     return output;
 }
-void CreateArray(int[,] array)
+void PrintArray(int[,] matrix)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(10);
-        }
-    }
-}
-void WriteArray(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write(array[i, j] + " ");
+            Console.Write($"{matrix[i, j]} ");
         }
         Console.WriteLine();
     }
 }
-
-int minSumLine = 0;
-int sumLine = SumLineElements(array, 0);
-int SumLineElements(int[,] array, int i)
+void FillArray(int[,] matrix)
 {
-    int sumLine = array[i, 0];
-    for (int j = 1; j < array.GetLength(1); j++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        sumLine += array[i, j];
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            matrix[i, j] = new Random().Next(1, 10);
+        }
+    }
+}
+int[,] matrix = new int[m, n];
+FillArray(matrix);
+PrintArray(matrix);
+int minSum = 0;
+int sumLine = sumLineNumber(matrix, 0);
+int sumLineNumber(int[,] matrix, int i)
+{
+    int sumLine = matrix[i, 0];
+    for (int j = 1; j < matrix.GetLength(1); j++)
+    {
+        sumLine += matrix[i, j];
     }
     return sumLine;
 }
-for (int i = 1; i < array.GetLength(0); i++)
+for (int i = 1; i < matrix.GetLength(0); i++)
 {
-    int tempSumLine = SumLineElements(array, i);
-    if (sumLine > tempSumLine)
+    int minSumLine = sumLineNumber(matrix, i);
+    if (sumLine > minSumLine)
     {
-        sumLine = tempSumLine;
-        minSumLine = i;
+        sumLine = minSumLine;
+        minSum = i;
     }
 }
-Console.WriteLine($"{minSumLine + 1} - строкa с наименьшей суммой ({sumLine}) элементов ");
+Console.WriteLine($"Cтрокa с наименьшей суммой элементов: {minSum + 1} ");
