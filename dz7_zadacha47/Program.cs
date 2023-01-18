@@ -4,31 +4,31 @@ Console.Write("Введите n ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 
-double[,] array = new double[m, n];
+double[,] matrix = new double[m, n];
 
-void FillArray(double[,] array)
+void FillArray(double[,] matrix)
 {
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            array[i, j] = new Random().NextDouble() * 10;
+            matrix[i, j] = new Random().NextDouble() * 10;
         }
     }
 }
 
-void WriteArray(double[,] array)
+void WriteArray(double[,] matrix)
 {
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            double alignNumber = Math.Round(array[i, j], 1);
+            double alignNumber = Math.Round(matrix[i, j], 1);
             Console.Write(alignNumber + " ");
         }
         Console.WriteLine();
     }
 }
 
-FillArray(array);
-WriteArray(array);
+FillArray(matrix);
+WriteArray(matrix);
