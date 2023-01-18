@@ -30,7 +30,7 @@ void FillArray(int[,] matrix)
 int[,] matrix = new int[m, n];
 FillArray(matrix);
 PrintArray(matrix);
-int minSum = 0;
+int minSum = 1;
 int sumLine = sumLineNumber(matrix, 0);
 int sumLineNumber(int[,] matrix, int i)
 {
@@ -47,7 +47,7 @@ for (int i = 1; i < matrix.GetLength(0); i++)
     if (sumLine > minSumLine)
     {
         sumLine = minSumLine;
-        minSum = i;
+        minSum = i + 1;
     }
 }
-Console.WriteLine($"Cтрокa с наименьшей суммой элементов: {minSum + 1} ");
+Console.WriteLine($"Cтрокa с наименьшей суммой элементов: {minSum} ");
