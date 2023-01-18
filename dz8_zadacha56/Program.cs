@@ -1,5 +1,5 @@
-﻿int m = InputNumbers("Введите число строк ");
-int n = InputNumbers("Введите число столбцов ");
+﻿int m = InputNumbers("Введите число строк m ");
+int n = InputNumbers("Введите число столбцов n ");
 int InputNumbers(string input)
 {
     Console.Write(input);
