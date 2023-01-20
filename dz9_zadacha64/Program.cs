@@ -8,7 +8,6 @@ int number(int n, int m)
         Console.Write($"{number(n, m + 1)}, ");
     return m;
 }
-
 int InputNumbers(string input)
 {
     Console.Write(input);
