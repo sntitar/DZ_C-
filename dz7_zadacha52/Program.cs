@@ -32,11 +32,11 @@ FillArray(matrix);
 PrintArray(matrix);
 for (int i = 0; i < n; i++)
 {
-    double arithmeticMean = 0;
+    double average = 0;
     for (int j = 0; j < m; j++)
     {
-        arithmeticMean += matrix[j, i];
+        average += matrix[j, i];
     }
-    arithmeticMean = Math.Round(arithmeticMean / m, 1);
-    Console.WriteLine($"Cреднее арифметическое столбца № {i+1}: {arithmeticMean}");
+    average = Math.Round(average / m, 1);
+    Console.WriteLine($"Cреднее арифметическое столбца {i+1}: {average}");
 }
