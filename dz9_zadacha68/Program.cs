@@ -1,6 +1,6 @@
 ﻿int m = InputNumbers("Введите неотрицательное число M: ");
 int n = InputNumbers("Введите неотрицательное число N: ");
-Console.WriteLine($"A({m}, {n}) = {numberA(m, n)}");
+Console.WriteLine($"A ({m}, {n}) = {numberA(m, n)}");
 int InputNumbers(string input)
 {
     Console.Write(input);
