@@ -38,5 +38,5 @@ for (int i = 0; i < n; i++)
         average += matrix[j, i];
     }
     average = Math.Round(average / m, 1);
-    Console.WriteLine($"Cреднее арифметическое столбца {i+1}: {average}");
+    Console.WriteLine($"Cреднее арифметическое столбца {i + 1}: {average}");
 }

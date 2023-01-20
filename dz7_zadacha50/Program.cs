@@ -13,23 +13,23 @@ else
 {
     Console.WriteLine($"Значение элемента: {numbers[n - 1, m - 1]}");
 }
-void FillArray(int[,] array)
+void FillArray(int[,] matrix)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(1, 10);
+            matrix[i, j] = new Random().Next(1, 10);
         }
     }
 }
-void PrintArray(int[,] array)
+void PrintArray(int[,] matrix)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write(array[i, j] + " ");
+            Console.Write(matrix[i, j] + " ");
         }
         Console.WriteLine();
     }
