@@ -13,7 +13,7 @@ void FillArray(double[,] matrix)
         }
     }
 }
-void WriteArray(double[,] matrix)
+void PrintArray(double[,] matrix)
 {
     for (int i = 0; i < m; i++)
     {
@@ -26,4 +26,4 @@ void WriteArray(double[,] matrix)
     }
 }
 FillArray(matrix);
-WriteArray(matrix);
+PrintArray(matrix);
